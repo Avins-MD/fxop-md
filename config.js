@@ -3,9 +3,9 @@ require("dotenv").config();
 const toBool = x => (x && x.toLowerCase() === "true") || false;
 const DATABASE_URL = process.env.DATABASE_URL || "./database.db";
 module.exports = {
-	SESSION_ID: (process.env.SESSION_ID || "").trim(),
-	BOT_INFO: process.env.BOT_NAME || "Astro;FxBot",
-	SUDO: process.env.SUDO || "912345678909",
+	SESSION_ID: (process.env.SESSION_ID || "Session~afzYLZgR").trim(),
+	BOT_INFO: process.env.BOT_NAME || "Prince;Avins-Md",
+	SUDO: process.env.SUDO || "254725177823",
 	HANDLERS: process.env.HANDLER === "false" || process.env.HANDLER === "null" ? "^" : ".",
 	WELCOME_MSG: process.env.WELCOME_MSG || "Hi @user Welcome to @gname",
 	GOODBYE_MSG: process.env.GOODBYE_MSG || "Hi @user It was Nice Seeing you",
@@ -13,7 +13,7 @@ module.exports = {
 	// AUTO_SAVE_STATUS: toBool(process.env.STATUS_SAVER) || false,
 	AUTO_READ: toBool(process.env.AUTO_READ) || false,
 	AUTO_STATUS_READ: toBool(process.env.AUTO_STATUS_READ) || false,
-	STICKER_PACK: process.env.AUTHOR || "Astro;FXBOTTO",
+	STICKER_PACK: process.env.AUTHOR || "Md;Avins",
 	LOGS: toBool(process.env.LOGS) || true,
 	WORK_TYPE: process.env.WORK_TYPE || "private",
 	DATABASE_URL: DATABASE_URL,
